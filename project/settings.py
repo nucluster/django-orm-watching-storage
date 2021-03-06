@@ -2,12 +2,12 @@ import os
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': '',
-        'PORT': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'checkpoint',
+        'USER': 'guard',
+        'PASSWORD': 'osim5',
+        'HOST': 'checkpoint.devman.org',
+        'PORT': '5434',
     }
 }
 
