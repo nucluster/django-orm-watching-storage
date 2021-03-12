@@ -16,6 +16,13 @@ def format_duration(duration):
         return "{} ч {} мин".format(hours, minutes)
 
 
+def is_visit_long(self, minutes=60):
+    if (self.get_duration().seconds() // 3600) > minutes:
+        return True
+    else:
+        return False
+
+
 print("datetime.datetime.now():", datetime.datetime.now())
 print("time.localtime():", time.localtime())
 delta = datetime.datetime.now() - datetime.datetime.fromtimestamp(0)
