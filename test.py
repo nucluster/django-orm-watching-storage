@@ -16,20 +16,21 @@ def format_duration(duration):
         return "{} ч {} мин".format(hours, minutes)
 
 
-def is_visit_long(self, minutes=60):
-    if (self.get_duration().seconds() // 3600) > minutes:
+def is_visit_long(duration, minutes=60):
+    if (duration.total_seconds() // 60) > minutes:
         return True
     else:
         return False
 
 
 print("datetime.datetime.now():", datetime.datetime.now())
-print("time.localtime():", time.localtime())
 delta = datetime.datetime.now() - datetime.datetime.fromtimestamp(0)
 print("delta:", delta)
 delta2 = datetime.timedelta(minutes=1000, hours=0)
 print("format_duration(delta):", format_duration(delta))
 print("format_duration(delta2):", format_duration(delta2))
+print(delta2.total_seconds() // 60)
+print(is_visit_long(delta2))
 
 # print(datetime.datetime.fromtimestamp(0, tz=datetime.timezone.utc))
 # print(datetime.datetime.fromtimestamp(0))
