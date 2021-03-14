@@ -5,7 +5,6 @@ from .models import format_duration
 
 
 def storage_information_view(request):
-    # Программируем здесь
     non_closed_visits = []
     d = {'True': 'Да!', 'False': 'Нет'}
     for item in Visit.objects.filter(leaved_at=None):
