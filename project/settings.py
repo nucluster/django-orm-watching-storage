@@ -1,5 +1,17 @@
 import os
+# from dotenv import load_dotenv
+# load_dotenv()
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('DATABASES_NAME'),
+#         'USER': os.getenv('DATABASES_USER'),
+#         'PASSWORD': os.getenv('DATABASES_PASSWORD'),
+#         'HOST': os.getenv('DATABASE_HOST'),
+#         'PORT': os.getenv('DATABASE_PORT'),
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -10,11 +22,12 @@ DATABASES = {
         'PORT': '5434',
     }
 }
-
 INSTALLED_APPS = ['datacenter']
 
+# SECRET_KEY = os.getenv('SECRET_KEY')
 SECRET_KEY = 'REPLACE_ME'
 
+# DEBUG = os.getenv('DEBUG')
 DEBUG = True
 
 ROOT_URLCONF = "project.urls"
