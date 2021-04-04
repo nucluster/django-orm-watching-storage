@@ -19,10 +19,19 @@ $ python manage.py runserver
 ## Установка
 * установить и активировать виртуальное окружение
 ```console
-$ python3 -m venv venv
+$ python3 -m venv venvх 
 $ source venv/bin/activate
 ```
 * установить зависимости
-```console
+```consoleпорта
 $ pip install -r requirements.txt
 ```
+## Настройка переменных окружения
+в корне проекта необходимо создать файл .env с указанием следующих переменных окружения:  
+DATABASES_NAME  - имя базы данных  
+DATABASES_USER  - имя пользователя  
+DATABASES_PASSWORD - пароль пользователя бызы данных  
+DATABASES_HOST - имя хоста сервера базы данных  
+DATABASES_PORT - номер порта  
+SECRET_KEY - секретный ключ  
+DEBUG - значение параметра отладки (True или False)  
