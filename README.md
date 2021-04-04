@@ -31,7 +31,7 @@ $ pip install -r requirements.txt
   
 DATABASES_NAME  - имя базы данных  
 DATABASES_USER  - имя пользователя  
-DATABASES_PASSWORD - пароль пользователя бызы данных  
+DATABASES_PASSWORD - пароль пользователя бaзы данных  
 DATABASES_HOST - имя хоста сервера базы данных  
 DATABASES_PORT - номер порта  
 SECRET_KEY - секретный ключ  
