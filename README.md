@@ -27,7 +27,8 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 ## Настройка переменных окружения
-в корне проекта необходимо создать файл .env с указанием следующих переменных окружения:  
+в корне проекта необходимо создать файл .env с указанием следующих переменных окружения:
+  
 DATABASES_NAME  - имя базы данных  
 DATABASES_USER  - имя пользователя  
 DATABASES_PASSWORD - пароль пользователя бызы данных  
@@ -36,6 +37,7 @@ DATABASES_PORT - номер порта
 SECRET_KEY - секретный ключ  
 DEBUG - значение параметра отладки (True или False)  
 ALLOWED_HOSTS - список разрешенных хостов через запятую  
+  
 Пример:
 ```
 ALLOWED_HOSTS='www.example.com, .myhost.com'
