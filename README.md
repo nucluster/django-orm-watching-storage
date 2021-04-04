@@ -35,8 +35,11 @@ DATABASES_HOST - имя хоста сервера базы данных
 DATABASES_PORT - номер порта  
 SECRET_KEY - секретный ключ  
 DEBUG - значение параметра отладки (True или False)  
-ALLOWED_HOSTS - список разрешенных хостов через запятую
+ALLOWED_HOSTS - список разрешенных хостов через запятую  
+Пример:
 ```
-пример: ALLOWED_HOSTS='www.example.com, .myhost.com'
+ALLOWED_HOSTS='www.example.com, .myhost.com'
+DEBUG='false'
+DATABASES_USER='vasya'
 ```
 
