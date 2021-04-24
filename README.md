@@ -19,7 +19,7 @@ $ python manage.py runserver
 ## Установка
 * установить и активировать виртуальное окружение
 ```console
-$ python3 -m venv venvх 
+$ python3 -m venv venv
 $ source venv/bin/activate
 ```
 * установить зависимости
